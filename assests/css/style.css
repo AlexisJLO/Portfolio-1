@@ -53,6 +53,28 @@ p {
     font-size: 16px;
 }
 
+.sidebar {
+    position: relative;
+    display: inline;
+    float: left;
+    width: 80px;
+    height: 800px;
+    list-style-type: disc;
+}
+
+.logos {
+    width: 60px;
+    height: auto;
+    filter: grayscale(100%) brightness(250%);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    list-style: none;
+}
+ul {
+    list-style: disc;
+}
+
 .content {
     width: 98%;
     display: inline-block;
