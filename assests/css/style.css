@@ -5,15 +5,16 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #070961;
+    background-image: radial-gradient(rgb(33, 0, 77), rgb(29, 0, 53));
 }
 
 .header {
-    padding: 100px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: linear-gradient(66deg, rgb(250,0,87), rgb(143,87,90));
     color: #ffffff;
     text-align: center;
+    margin-bottom: 250px;
    
 }
 
@@ -26,7 +27,7 @@ body {
 
 
 .header div {
-    padding-top: 100px;
+    padding-top: 50px;
     margin-right: 15px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,6 +44,97 @@ body {
     margin-left: 25px;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.content {
+    width: 98%;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    color: #ffffff;
+    
+}
+
+.container {
+    position: relative;
+    padding: 0 0 200px 0;
+}
+
+.content h1 {
+    font-size: 72px;
+    text-align: center;
+    color: #cecece;
+  
+}
+.content h3 {
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    top: 23px;
+    right: 95px;
+    color: green;
+    
+}
+.container h2 {
+    font-size: 20px;
+    color: #8d8d8d;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 20%;
+    padding: 60px 0 0 0;
+    margin: 0 0 0 40%;
+}
+
+
+.AboutME h2 {
+    font-size: 100px;
+    color: #cecece;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    body {
+      width: calc(50% - 1rem);
+    }
+   
+    .AboutMe h2, .Resume h2, .Work h2 .Contact-Me h2 {
+    font-size: 28px;
+    }
+    .AboutMe img, .Resume img, .Work img, .Contact-Me h2 {
+        max-height: 150px;
+    }
+      }
+  
+@media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+    }
+    
+    .AboutMe h2, .Resume h2, .Work h2, .Contact-Me h2 {
+      font-size: 24px;
+    }
+  
+    .AboutMe img, .Resume img, .Work img, .Contact-Me img {
+    max-height: 100px; 
+    }
+  }
+  
 
   
+  
+
   
