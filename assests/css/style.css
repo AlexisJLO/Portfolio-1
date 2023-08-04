@@ -74,10 +74,6 @@ p {
   }
 
     
-
-
-
-
 .content {
     width: 100%;
     display: inline-block;
@@ -86,9 +82,7 @@ p {
     margin-bottom: 20px;
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
     color: #ffffff;
-    
 }
 
 .container {
@@ -122,10 +116,19 @@ p {
 }
 
 
-.AboutME h2 {
-    font-size: 100px;
-    color: #cecece;
-    text-align: center;
+.AboutMe {
+    width: 90%;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    padding: 400px 0 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+.AboutMe img {
+    width: 200px;
+    height: auto;
 }
 
 
@@ -142,8 +145,8 @@ p {
     .content {
         font-size: 36px;
     }
-    .AboutMe img, .Resume img, .Work img, .Contact-Me h2 {
-        max-height: 150px;
+    .AboutMe img {
+        max-height: 200px;
     }
       }
   
