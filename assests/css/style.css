@@ -39,7 +39,7 @@ body {
     list-style-type: none;
 }
 
-.header div ul li {
+.header div ul li, .sidebar ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -54,29 +54,32 @@ p {
 }
 
 .sidebar {
-    position: relative;
-    display: inline;
-    float: left;
+    position: fixed;
+    left: 0;
+    top: 115%;
+    bottom: 50%;
+    transform: translateY(-50%);
     width: 80px;
-    height: 800px;
-    list-style-type: disc;
+    height: 100%;
+    
+    text-align: center;
+    padding-top: 20px;
 }
 
-.logos {
-    width: 60px;
-    height: auto;
-    filter: grayscale(100%) brightness(250%);
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    list-style: none;
-}
-ul {
-    list-style: disc;
-}
+.Logos{
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    filter: brightness(0) invert(1) grayscale(4) contrast(9);
+  }
+
+    
+
+
+
 
 .content {
-    width: 98%;
+    width: 100%;
     display: inline-block;
     flex-wrap: wrap;
     margin-left: 20px;
@@ -91,7 +94,7 @@ ul {
 
 .container {
     position: relative;
-    padding: 0 0 200px 0;
+    text-align: left;
 }
 
 .content h1 {
