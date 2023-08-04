@@ -156,29 +156,75 @@ p {
 
 
 .AboutMe {
-    width: 80%;
-    display: inline-block;
+    width: 100%;
+    display: grid;
     flex-wrap: wrap;
-    margin-left: 200px;
-    margin-bottom: 20px;
-    padding: 100px 0 20px 0;
+    margin: 0 auto;
+    padding: 100px 0;
     font-family: 'League Spartan', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #000000;
     background-color: white;
+    text-align: center;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
 }
 .AboutMe img {
+    display: inline;
     width: 936px;
     height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 .Work {
     text-align: center;
     font-size: 28px;
     margin-bottom: 70px;
     color: #4a4a4a;
-    transition-delay: .18s;
+    position: relative;
+    
+ 
 }
 #Work {
     margin-bottom: 72px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.latestWork {
+    display: inline-block;
+    position: relative;
+    
+}
+.latestWorkImage {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.latestWork:hover .latestWorkImage {
+    transform: scale(1.05); /* Enlarge the image on hover */
+}
+.layer {
+    position: absolute; /* Position the layer absolutely within the container */
+    width: 100%; /* Make the layer take up the full width */
+    height: 100%; /* Make the layer take up the full height */
+    background: linear-gradient(rgb(43, 43, 43), #ff004f);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; /* Initially hide the layer */
+    transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+}
+
+.latestWork:hover .layer {
+    opacity: 1; /* Show the layer on hover */
 }
 
 
