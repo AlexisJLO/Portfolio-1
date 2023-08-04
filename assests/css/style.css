@@ -84,8 +84,7 @@ p {
     flex-wrap: wrap;
     margin-left: 20px;
     margin-bottom: 20px;
-    padding: 50px;
-    height: 600px;
+    padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
     color: #ffffff;
@@ -134,10 +133,14 @@ p {
 @media screen and (max-width: 992px) {
     body {
       width: calc(50% - 1rem);
+      font-size: 36px;
     }
    
     .AboutMe h2, .Resume h2, .Work h2 .Contact-Me h2 {
     font-size: 28px;
+    }
+    .content {
+        font-size: 36px;
     }
     .AboutMe img, .Resume img, .Work img, .Contact-Me h2 {
         max-height: 150px;
