@@ -163,7 +163,6 @@ p {
     padding: 100px 0;
     font-family: 'League Spartan', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #000000;
-    background-color: white;
     text-align: center;
     grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -172,7 +171,7 @@ p {
 }
 .AboutMe img {
     display: inline;
-    width: 936px;
+    
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
@@ -181,7 +180,7 @@ p {
     text-align: center;
     font-size: 28px;
     margin-bottom: 70px;
-    color: #4a4a4a;
+    color: #c5c5c5;
     position: relative;
     
  
@@ -204,13 +203,13 @@ p {
 
 
 .latestWork:hover .latestWorkImage .layer {
-    transform: scale(1.1); /* Enlarge the image on hover */
+    transform: scale(1.1); 
 }
 .layer {
-    position: absolute; /* Position the layer absolutely within the container */
-    width: 100%; /* Make the layer take up the full width */
-    height: 100%; /* Make the layer take up the full height */
-    background: linear-gradient(rgb(43, 43, 43), #ff004f);
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background: radial-gradient(rgb(0, 107, 107), rgba(0, 0, 0, 0.753));
     border-radius: 10px;
     left: 0;
     bottom: 0;
@@ -219,14 +218,21 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    opacity: 0; /* Initially hide the layer */
-    transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+    opacity: 0; 
+    transition: opacity 0.3s ease; /
 }
 
 .latestWork:hover .layer {
-    opacity: 1; /* Show the layer on hover */
+    opacity: 1; 
 }
 
+.AboutMe img,
+.Work .latestWorkImage,
+.Resume img,
+.Contact-Me img {
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 992px) {
     body {
@@ -258,4 +264,12 @@ p {
     max-height: 100px; 
     }
   }
+  @media screen and (min-width: 992px) {
+    .AboutMe img,
+    .Work .latestWorkImage,
+    .Resume img,
+    .Contact-Me img {
+        max-height: 468px; 
+    }
+}
   
