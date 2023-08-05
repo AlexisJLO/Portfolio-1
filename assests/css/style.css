@@ -156,7 +156,7 @@ p {
 
 
 .AboutMe {
-    width: 100%;
+    width: 90%;
     display: grid;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -203,8 +203,8 @@ p {
 }
 
 
-.latestWork:hover .latestWorkImage {
-    transform: scale(1.05); /* Enlarge the image on hover */
+.latestWork:hover .latestWorkImage .layer {
+    transform: scale(1.1); /* Enlarge the image on hover */
 }
 .layer {
     position: absolute; /* Position the layer absolutely within the container */
