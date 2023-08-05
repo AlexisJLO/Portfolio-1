@@ -268,6 +268,52 @@ p {
     text-align: left;
 }
 
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: rgb(33, 0, 77);
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(0, 107, 107);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.button:hover {
+    background: rgb(0, 107, 107);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-left p {
+    color: #c4c2c2;
+    font-size: 28px;
+}
 @media screen and (max-width: 992px) {
     body {
       width: calc(50% - 1rem);
