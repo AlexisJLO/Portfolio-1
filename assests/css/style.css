@@ -228,7 +228,6 @@ p {
 
 .AboutMe img,
 .Work .latestWorkImage,
-.Resume img,
 .Contact-Me img {
     max-width: 100%;
     height: auto;
@@ -266,6 +265,11 @@ p {
     padding: 50px 0;
     font-size: 22px;
     text-align: left;
+}
+
+#ContactMe {
+    padding: 200px 0;
+
 }
 
 .contact-left {
